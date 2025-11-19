@@ -17,6 +17,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'NIM_Tugas7 - Portfolio',
+      debugShowCheckedModeBanner:
+          false, // Tambahkan ini untuk menghilangkan banner DEBUG
       theme: ThemeData(primarySwatch: Colors.indigo, useMaterial3: false),
       initialRoute: storage.isLoggedIn() ? '/home' : '/',
       onGenerateRoute: Routes.generate,
